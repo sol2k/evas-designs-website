@@ -102,19 +102,30 @@
     }, { passive: true });
   }
 
-  /* Contact form: front-end validation + WhatsApp handoff */
+  /* Contact / consultation forms: front-end validation + WhatsApp handoff */
   var form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       if (!form.reportValidity()) return;
       var data = new FormData(form);
-      var msg =
-        "Hello Evas Designs, I'm " + (data.get("name") || "") + ".\n" +
-        "Project type: " + (data.get("project-type") || "") + "\n" +
-        "Location: " + (data.get("location") || "") + "\n" +
-        (data.get("message") ? "Details: " + data.get("message") : "");
-      window.open("https://wa.me/918447512475?text=" + encodeURIComponent(msg), "_blank", "noopener");
+      var labels = {
+        "lead-topic": "Requirement",
+        "phone": "Phone",
+        "project-type": "Project type",
+        "location": "Location",
+        "plot-size": "Plot / property size",
+        "timeline": "Timeline",
+        "budget": "Budget range",
+        "message": "Details"
+      };
+      var name = data.get("name") || "there";
+      var lines = ["Hello Evas Designs, I'm " + name + "."];
+      Object.keys(labels).forEach(function (key) {
+        var value = data.get(key);
+        if (value) lines.push(labels[key] + ": " + value);
+      });
+      window.open("https://wa.me/918447512475?text=" + encodeURIComponent(lines.join("\n")), "_blank", "noopener");
       var note = document.getElementById("form-note");
       if (note) note.textContent = "Opening WhatsApp with your message — press send there and we'll take it from here.";
     });
