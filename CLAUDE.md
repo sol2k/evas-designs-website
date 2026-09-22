@@ -46,6 +46,19 @@ commercial-building-architect-gurgaon/index.html
 house-construction-from-scratch-gurgaon/index.html
 ```
 
+Plus two more standalone pages, added 2026-09-21, that use the **main site's**
+header/footer markup (not the pSEO variant above — they have the "Follow"
+column and a combined `tel:` line, not the Gurgaon cross-link column):
+
+```
+best-architecture-firm-in-gurgaon/index.html   — ranked "best firm" listicle, Evas Designs #1
+interior-designer-malviya-nagar-delhi.html     — second studio location (Malviya Nagar, Delhi)
+```
+
+Both are indexed in sitemap.xml. `best-architecture-firm-in-gurgaon/index.html`
+loads `css/style.css` and `js/main.js` with a `?v=20260921` cache-busting query
+string; the other pages on the site do not use one.
+
 Shared structural markers found in the main pages (for extraction reference):
 - Header: `<header class="site-header">` ... `</header>`
 - Footer: `<footer class="site-footer">` ... `</footer>`
