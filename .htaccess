@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Serve foo.html when /foo is requested, so clean URLs work without a
+# redirect and without touching existing .html links/canonicals.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [L]
