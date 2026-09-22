@@ -113,4 +113,13 @@
       <image:title>Best architecture firm in Gurgaon — Evas Designs</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://evasdesigns.in/services/interior-desing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://evasdesigns.in/images/luxury-entrance-foyer-interior-design-gurugram.jpg</image:loc>
+      <image:title>Interior design services in Gurgaon and Delhi NCR — Evas Designs</image:title>
+    </image:image>
+  </url>
 </urlset>
