@@ -122,4 +122,13 @@
       <image:title>Interior design services in Gurgaon and Delhi NCR — Evas Designs</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://evasdesigns.in/building-materials-comparison-india/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://evasdesigns.in/images/double-height-living-room-villa-design-delhi-ncr.jpg</image:loc>
+      <image:title>Building materials comparison for Indian homes — Evas Designs</image:title>
+    </image:image>
+  </url>
 </urlset>

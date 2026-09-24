@@ -1791,3 +1791,100 @@ section { padding: 104px 0; }
   .firm-rank { grid-template-columns: 52px 1fr; gap: 18px; padding: 30px 24px; }
   .firm-rank .rank-num { font-size: 1.7rem; }
 }
+
+
+/* ---------- Material comparison guide ---------- */
+
+.compare-block {
+  padding: 76px 0;
+  border-top: 1px solid var(--line);
+}
+
+.compare-block:first-of-type { border-top: none; padding-top: 8px; }
+
+.compare-head {
+  display: grid;
+  grid-template-columns: 118px 1fr;
+  gap: 36px;
+  margin-bottom: 34px;
+}
+
+.compare-head .compare-num {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--gold);
+}
+
+.compare-head h3 { font-size: clamp(1.7rem, 3vw, 2.35rem); font-weight: 380; margin: 10px 0 16px; }
+.compare-head p { color: var(--espresso-soft); max-width: 78ch; }
+
+.compare-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  background: var(--champagne);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.compare-table thead th {
+  background: var(--ivory);
+  color: var(--gold-deep);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.compare-table tbody th {
+  width: 168px;
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 450;
+  color: var(--espresso);
+}
+
+.compare-table td { color: var(--espresso-soft); font-size: 0.95rem; }
+.compare-table tbody tr:last-child th,
+.compare-table tbody tr:last-child td { border-bottom: none; }
+
+.compare-verdict {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin-top: 30px;
+}
+
+.verdict-card { background: var(--champagne); padding: 28px 26px; }
+.verdict-card h4 { font-family: var(--font-display); font-size: 1.08rem; font-weight: 450; margin-bottom: 10px; }
+.verdict-card p { color: var(--espresso-soft); font-size: 0.94rem; }
+
+@media (max-width: 1024px) {
+  .compare-head { grid-template-columns: 1fr; gap: 16px; }
+  .compare-verdict { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .compare-block { padding: 58px 0; }
+  .compare-table { min-width: 720px; }
+  .compare-table th,
+  .compare-table td { padding: 16px 18px; }
+  .verdict-card { padding: 24px 22px; }
+}
