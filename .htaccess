@@ -1,5 +1,7 @@
 RewriteEngine On
 
+ErrorDocument 404 /404.html
+
 # Serve foo.html when /foo (or /foo/) is requested, so clean URLs work
 # without a redirect and without touching existing .html links/canonicals.
 # Matches only a single bare path segment, so it takes priority over
