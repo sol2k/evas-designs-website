@@ -1983,3 +1983,71 @@ section { padding: 104px 0; }
   .legal-content .toc ol { columns: 1; }
   .legal-content h2 { scroll-margin-top: 92px; }
 }
+
+
+/* ---------- Homepage top contact bar ---------- */
+
+.home-topbar {
+  background: var(--ink-dark);
+  color: var(--champagne-text);
+  border-bottom: 1px solid rgba(216, 190, 140, 0.22);
+  font-size: 0.78rem;
+}
+
+.home-topbar .wrap {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.topbar-text {
+  color: #A99C83;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.topbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.topbar-contact a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--champagne);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: color var(--speed) ease;
+  white-space: nowrap;
+}
+
+.topbar-contact a:hover { color: var(--gold-light); }
+
+.topbar-contact .label {
+  color: var(--gold-light);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .topbar-text { display: none; }
+  .home-topbar .wrap { justify-content: center; }
+}
+
+@media (max-width: 720px) {
+  .home-topbar .wrap { min-height: 40px; gap: 14px; }
+  .topbar-contact { gap: 14px; justify-content: center; }
+  .topbar-contact .label { display: none; }
+  .topbar-contact a { font-size: 0.74rem; }
+}
