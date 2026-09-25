@@ -10,3 +10,8 @@ ErrorDocument 404 /404.html
 # touches multi-segment paths like /services/interior-design/.
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^([^/.]+)/?$ $1.html [L]
+
+# Terms and Conditions is linked/canonicalised without .html; redirect the
+# .html URL to the clean one so both don't get indexed as separate pages.
+RewriteCond %{THE_REQUEST} \s/+terms-and-conditions\.html[\s?] [NC]
+RewriteRule ^terms-and-conditions\.html$ /terms-and-conditions [R=301,L]
