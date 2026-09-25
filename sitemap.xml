@@ -143,6 +143,11 @@
   <url>
     <loc>https://evasdesigns.in/terms-and-conditions</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://evasdesigns.in/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
