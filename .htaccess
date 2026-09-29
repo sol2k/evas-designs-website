@@ -4,7 +4,9 @@ ErrorDocument 404 /404.html
 
 # Root pages are linked/canonicalised without .html; redirect the .html
 # URLs to the clean ones so both don't get indexed as separate pages.
-RewriteCond %{THE_REQUEST} \s/+(about|services|portfolio|faq|contact|privacy-policy|terms-and-conditions|interior-designer-malviya-nagar-delhi|interior-designer-dlf-phase-3-gurgaon|interior-designer-vasant-kunj-delhi)\.html[\s?] [NC]
+RewriteRule ^interior-designer-vasant-kunj-delhi/?$ /building-construction-architect-vasant-kunj-delhi [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+(about|services|portfolio|faq|contact|privacy-policy|terms-and-conditions|interior-designer-malviya-nagar-delhi|interior-designer-dlf-phase-3-gurgaon|building-construction-architect-vasant-kunj-delhi)\.html[\s?] [NC]
 RewriteRule ^([a-z0-9-]+)\.html$ /$1 [R=301,L]
 
 # Serve foo.html when /foo (or /foo/) is requested, so clean URLs work
