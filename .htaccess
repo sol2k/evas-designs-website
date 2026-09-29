@@ -2,6 +2,11 @@ RewriteEngine On
 
 ErrorDocument 404 /404.html
 
+# Root pages are linked/canonicalised without .html; redirect the .html
+# URLs to the clean ones so both don't get indexed as separate pages.
+RewriteCond %{THE_REQUEST} \s/+(about|services|portfolio|faq|contact|privacy-policy|terms-and-conditions|interior-designer-malviya-nagar-delhi|interior-designer-dlf-phase-3-gurgaon)\.html[\s?] [NC]
+RewriteRule ^([a-z0-9-]+)\.html$ /$1 [R=301,L]
+
 # Serve foo.html when /foo (or /foo/) is requested, so clean URLs work
 # without a redirect and without touching existing .html links/canonicals.
 # Matches only a single bare path segment, so it takes priority over
@@ -10,8 +15,3 @@ ErrorDocument 404 /404.html
 # touches multi-segment paths like /services/interior-design/.
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^([^/.]+)/?$ $1.html [L]
-
-# Terms and Conditions is linked/canonicalised without .html; redirect the
-# .html URL to the clean one so both don't get indexed as separate pages.
-RewriteCond %{THE_REQUEST} \s/+terms-and-conditions\.html[\s?] [NC]
-RewriteRule ^terms-and-conditions\.html$ /terms-and-conditions [R=301,L]
