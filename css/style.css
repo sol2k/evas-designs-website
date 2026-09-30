@@ -2093,8 +2093,8 @@ section { padding: 104px 0; }
 .locator-map-frame { overflow: hidden; }
 .locator-map-frame iframe {
   width: 100%;
-  height: 760px;
-  margin-top: -80px; /* crop Google My Maps header bar */
+  height: 772px;
+  margin-top: -92px; /* crop Google My Maps header bar */
   border: none;
   display: block;
 }
