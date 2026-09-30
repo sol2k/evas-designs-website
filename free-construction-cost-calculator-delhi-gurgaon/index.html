@@ -76,6 +76,8 @@
   }
     .img-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 40px; }
     .img-duo .img-frame, .img-wide .img-frame { margin: 0; }
+    .img-duo .img-frame { aspect-ratio: 4 / 5; overflow: hidden; }
+    .img-wide .img-frame { aspect-ratio: 3 / 2; overflow: hidden; }
     .img-duo img, .img-wide img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .img-wide { margin-top: 40px; }
     .img-cap { font-size: 0.9rem; color: var(--muted, #6b6257); margin-top: 10px; letter-spacing: 0.02em; }
