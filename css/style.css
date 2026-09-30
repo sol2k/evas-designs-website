@@ -2067,7 +2067,37 @@ section { padding: 104px 0; }
   border: 1px solid var(--line-gold);
   background: var(--champagne);
 }
-.locator-map iframe { width: 100%; height: 680px; border: none; display: block; }
+.locator-map-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--line-gold);
+  background: var(--champagne);
+}
+.locator-map-bar svg { width: 20px; height: 20px; color: var(--gold); flex-shrink: 0; }
+.locator-map-bar .map-title {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  letter-spacing: 0.01em;
+  color: var(--espresso);
+}
+.locator-map-bar .map-sub {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.locator-map-frame { overflow: hidden; }
+.locator-map-frame iframe {
+  width: 100%;
+  height: 740px;
+  margin-top: -60px; /* crop Google My Maps header bar */
+  border: none;
+  display: block;
+}
 .locator-map figcaption {
   display: flex;
   justify-content: space-between;
@@ -2125,6 +2155,7 @@ section { padding: 104px 0; }
 @media (max-width: 900px) {
   .locator-layout { grid-template-columns: 1fr; }
   .locator-map { position: static; order: -1; }
-  .locator-map iframe { height: 440px; }
+  .locator-map-frame iframe { height: 500px; }
+  .locator-map-bar .map-sub { display: none; }
   .studio-panel { padding: 28px 24px 24px; }
 }
