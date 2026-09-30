@@ -17,3 +17,4 @@ RewriteRule ^([a-z0-9-]+)\.html$ /$1 [R=301,L]
 # touches multi-segment paths like /services/interior-design/.
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^([^/.]+)/?$ $1.html [L]
+RewriteRule ^construction-cost-calculator-delhi-gurgaon/?$ /free-construction-cost-calculator-delhi-gurgaon [R=301,L]
