@@ -74,7 +74,13 @@
     .calc-grid { grid-template-columns: 1fr; }
     .calc-result .r-total { font-size: 1.6rem; }
   }
-</style>
+    .img-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 40px; }
+    .img-duo .img-frame, .img-wide .img-frame { margin: 0; }
+    .img-duo img, .img-wide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .img-wide { margin-top: 40px; }
+    .img-cap { font-size: 0.9rem; color: var(--muted, #6b6257); margin-top: 10px; letter-spacing: 0.02em; }
+    @media (max-width: 720px) { .img-duo { grid-template-columns: 1fr; } }
+  </style>
 
 <script type="application/ld+json">
 {
@@ -333,6 +339,16 @@
       <div class="note-box reveal" style="margin-top:26px;">
         <p><strong>Budgeting tip:</strong> whatever band you land in, keep a 10–15% contingency for approvals, material escalation and design changes. The most reliable estimate is always an itemised BOQ after a site visit — <a href="/contact">we do that free</a>.</p>
       </div>
+      <div class="img-duo">
+        <figure class="reveal">
+          <div class="img-frame"><img src="/images/luxury-modern-house-exterior-evening-delhi-ncr.jpg" alt="Luxury modern house exterior in Delhi NCR built at premium construction cost per sq ft" width="1200" height="800" loading="lazy" decoding="async"></div>
+          <figcaption class="img-cap">Premium residential build, Delhi NCR — ₹2,900–3,800 per sq ft band.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="img-frame"><img src="/images/luxury-builder-floor-facade-evening-delhi.jpg" alt="Luxury builder floor facade in South Delhi with classical elevation and evening lighting" width="780" height="1040" loading="lazy" decoding="async"></div>
+          <figcaption class="img-cap">Luxury builder-floor facade, South Delhi — ₹3,800–5,000+ per sq ft band.</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -473,6 +489,10 @@
           </tbody>
         </table>
       </div>
+      <figure class="img-wide reveal">
+        <div class="img-frame"><img src="/images/commercial-office-building-glass-facade-gurgaon.jpg" alt="Commercial office building with glass facade in Gurgaon built by a commercial construction company" width="1200" height="799" loading="lazy" decoding="async"></div>
+        <figcaption class="img-cap">Commercial glass-facade office, Gurgaon — facade scope is a major cost driver.</figcaption>
+      </figure>
       <div class="feature-split" style="margin-top:56px;">
         <div class="feature-media reveal">
           <div class="img-frame">
@@ -697,7 +717,7 @@
         <a href="/services">Services</a>
         <a href="/portfolio">Portfolio</a>
         <a href="/faq">FAQ</a>
-        <a href="/free-construction-cost-calculator-delhi-gurgaon/">Free cost calculator</a>
+        <a href="/free-construction-cost-calculator-delhi-gurgaon/">Free Construction Cost Calculator</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
