@@ -228,4 +228,13 @@
       <image:title>Best architect in DLF Phase 1, Gurugram, Evas Designs</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://evasdesigns.in/dlf-phase-1-vs-dlf-phase-2/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://evasdesigns.in/images/dlf-phase1-vs-phase2-homes.jpg</image:loc>
+      <image:title>DLF Phase 1 vs DLF Phase 2 prices and cost of building, Evas Designs</image:title>
+    </image:image>
+  </url>
 </urlset>
