@@ -149,4 +149,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://evasdesigns.in/construction-ban-delhi-winter-grap-rules/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://evasdesigns.in/images/delhi-winter-smog-construction-ban-india-gate.jpg</image:loc>
+      <image:title>Winter construction rules &amp; GRAP bans in Delhi NCR — Evas Designs</image:title>
+    </image:image>
+  </url>
 </urlset>
