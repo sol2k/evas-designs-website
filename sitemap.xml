@@ -243,7 +243,16 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://evasdesigns.in/images/delhi-winter-smog-construction-ban-india-gate.jpg</image:loc>
-      <image:title>Winter construction rules &amp; GRAP bans in Delhi NCR — Evas Designs</image:title>
+      <image:title>Winter construction rules and GRAP bans in Delhi NCR, Evas Designs</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://evasdesigns.in/best-architect-in-dlf-phase-2/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://evasdesigns.in/images/dlf-phase2-residential-street-morning.jpg</image:loc>
+      <image:title>Best architect in DLF Phase 2, Gurugram, Evas Designs</image:title>
     </image:image>
   </url>
 </urlset>
