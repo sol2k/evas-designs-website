@@ -504,6 +504,8 @@ section { padding: 104px 0; }
 .bg-dark h2, .bg-dark h3 { color: var(--champagne); }
 .bg-dark .desc, .bg-dark p.dim { color: #B8AB90; }
 .bg-dark .eyebrow { color: var(--gold-light); }
+.bg-dark .feature-copy p { color: #B8AB90; }
+.bg-dark .feature-copy .tick-list li { color: var(--champagne-text); }
 
 .gold-rule {
   border: none;
