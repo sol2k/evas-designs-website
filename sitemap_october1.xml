@@ -194,4 +194,13 @@
       <image:title>Interior design &amp; home renovation in Greater Kailash 2, New Delhi — Evas Designs</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://evasdesigns.in/interior-design-and-home-renovation-vasant-kunj-delhi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://evasdesigns.in/images/luxury-apartment-living-room-interior-vasant-kunj-delhi.jpg</image:loc>
+      <image:title>Interior design and home renovation in Vasant Kunj, New Delhi</image:title>
+    </image:image>
+  </url>
 </urlset>
