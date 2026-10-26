@@ -211,17 +211,17 @@
 </script>
 <style>
 /* Directory rows: thin single-line bars */
-.firm-rank.guide-row { grid-template-columns: 64px 210px 1fr auto; gap: 28px; padding: 18px 32px; align-items: center; }
-.firm-rank.guide-row .rank-num { font-size: 1.7rem; }
-.firm-rank.guide-row h3 { font-size: 1.12rem; }
-.firm-rank.guide-row .firm-location { margin-top: 3px; font-size: 0.7rem; }
-.firm-rank.guide-row .firm-desc { margin-top: 0; font-size: 0.92rem; max-width: none; }
-.firm-rank.guide-row .firm-actions { margin-top: 0; }
+.firm-rank.guide-row { grid-template-columns: 56px 220px 1fr auto; gap: 8px 28px; padding: 16px 32px; align-items: center; }
+.firm-rank.guide-row .rank-num { grid-column: 1; grid-row: 1; font-size: 1.5rem; }
+.firm-rank.guide-row h3 { grid-column: 2; grid-row: 1; font-size: 1.1rem; }
+.firm-rank.guide-row .firm-location { grid-column: 2; grid-row: 1; align-self: end; margin: 0 0 -2px; font-size: 0.66rem; }
+.firm-rank.guide-row .firm-desc { grid-column: 3; grid-row: 1; margin: 0; font-size: 0.92rem; max-width: none; }
+.firm-rank.guide-row .firm-actions { grid-column: 4; grid-row: 1; margin: 0; justify-self: end; }
 .firm-rank.guide-row .btn { padding: 10px 22px; font-size: 0.76rem; white-space: nowrap; }
 @media (max-width: 920px) {
-  .firm-rank.guide-row { grid-template-columns: 48px 1fr; gap: 14px 18px; padding: 18px 22px; }
-  .firm-rank.guide-row .firm-desc { grid-column: 2; }
-  .firm-rank.guide-row .firm-actions { grid-column: 2; }
+  .firm-rank.guide-row { grid-template-columns: 40px 1fr; gap: 6px 16px; padding: 16px 20px; }
+  .firm-rank.guide-row .firm-desc { grid-column: 2; grid-row: 2; }
+  .firm-rank.guide-row .firm-actions { grid-column: 2; grid-row: 3; justify-self: start; }
 }
 </style>
 </head>
