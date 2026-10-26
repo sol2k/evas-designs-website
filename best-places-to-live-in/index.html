@@ -209,6 +209,21 @@
   ]
 }
 </script>
+<style>
+/* Directory rows: thin single-line bars */
+.firm-rank.guide-row { grid-template-columns: 64px 210px 1fr auto; gap: 28px; padding: 18px 32px; align-items: center; }
+.firm-rank.guide-row .rank-num { font-size: 1.7rem; }
+.firm-rank.guide-row h3 { font-size: 1.12rem; }
+.firm-rank.guide-row .firm-location { margin-top: 3px; font-size: 0.7rem; }
+.firm-rank.guide-row .firm-desc { margin-top: 0; font-size: 0.92rem; max-width: none; }
+.firm-rank.guide-row .firm-actions { margin-top: 0; }
+.firm-rank.guide-row .btn { padding: 10px 22px; font-size: 0.76rem; white-space: nowrap; }
+@media (max-width: 920px) {
+  .firm-rank.guide-row { grid-template-columns: 48px 1fr; gap: 14px 18px; padding: 18px 22px; }
+  .firm-rank.guide-row .firm-desc { grid-column: 2; }
+  .firm-rank.guide-row .firm-actions { grid-column: 2; }
+}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -278,79 +293,79 @@
         </div>
         <p class="desc reveal">Each guide below is written the same way: what the area costs, which societies fit which budget, who it suits, and what the interiors run. Pick your side of the border, or compare both.</p>
       </div>
-      <div class="firm-rank-list"><div class="firm-rank reveal">
+      <div class="firm-rank-list"><div class="firm-rank guide-row reveal">
           <span class="rank-num">01</span>
           <h3>Gurgaon</h3>
           <p class="firm-location">Hub guide</p>
           <p class="firm-desc">Five areas, from Golf Course Road landmarks to New Gurgaon value stock, with budget tables for each.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/gurgaon/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">02</span>
           <h3>Delhi</h3>
           <p class="firm-location">Hub guide</p>
           <p class="firm-desc">Six established colonies, from Greater Kailash bungalows to Rohini builder floors, with pocket-wise budgets.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/delhi/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">03</span>
           <h3>Golf Course Road, Gurgaon</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">The benchmark luxury corridor: Rs 25,000 to 80,000 per sq ft, established towers, tree cover and schools.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/gurgaon/golf-course-road/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">04</span>
           <h3>Golf Course Extension Road, Gurgaon</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">Newer towers at roughly two-thirds the Golf Course Road rate, with the widest choice of family 3BHKs.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/gurgaon/golf-course-extension-road/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">05</span>
           <h3>DLF City (Phases 1 to 5), Gurgaon</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">The bungalow belt: walk-to-school streets, low-rise calm and the strongest renovation arbitrage in NCR.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/gurgaon/dlf-city/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">06</span>
           <h3>Sohna Road, Gurgaon</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">Established family societies at Rs 10,000 to 15,000 per sq ft, twenty minutes from the corporate belt.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/gurgaon/sohna-road/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">07</span>
           <h3>Dwarka Expressway and New Gurgaon</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">The growth corridor: Rs 1.2 crore value homes to Rs 10 crore villas on one road, feeding the airport.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/gurgaon/dwarka-expressway-new-gurgaon/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">08</span>
           <h3>Greater Kailash, Delhi</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">GK-1 and GK-2 bungalows and floors: Rs 3.5 to 12 crore, the deepest social infrastructure in Delhi.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/delhi/greater-kailash/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">09</span>
           <h3>Malviya Nagar, Delhi</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">South Delhi value with Hauz Khas and IIT next door: DDA flats, builder floors and renovation-friendly stock.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/delhi/malviya-nagar/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">10</span>
           <h3>Vasant Kunj, Delhi</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">DDA sectors and private enclaves near the airport, with the widest price spread in South Delhi.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/delhi/vasant-kunj/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">11</span>
           <h3>Dwarka, West Delhi</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">Delhi's planned sub-city: sector-wise clusters, cooperative flats and Metro-first connectivity.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/delhi/dwarka/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">12</span>
           <h3>Rohini, North West Delhi</h3>
           <p class="firm-location">Area guide</p>
           <p class="firm-desc">Delhi's most family-affordable district: builder floors and society flats with metro on both flanks.</p>
           <div class="firm-actions"><a href="/best-places-to-live-in/delhi/rohini/" class="btn btn-ghost">Read the guide <span class="arrow">→</span></a></div>
-        </div><div class="firm-rank reveal">
+        </div><div class="firm-rank guide-row reveal">
           <span class="rank-num">13</span>
           <h3>Aerocity and Mahipalpur, Delhi</h3>
           <p class="firm-location">Area guide</p>
