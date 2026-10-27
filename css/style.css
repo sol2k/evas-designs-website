@@ -1190,6 +1190,9 @@ section { padding: 104px 0; }
 @media (max-width: 720px) {
   :root { --gutter: 22px; }
   section { padding: 72px 0; }
+  /* backdrop-filter creates a containing block for the fixed .main-nav,
+     which would otherwise double the page width on mobile */
+  .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; }
   .site-header .wrap { height: 72px; }
   .brand img { height: 36px; }
   .main-nav {
