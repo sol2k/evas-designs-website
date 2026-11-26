@@ -36,6 +36,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="/images/nivasa-villas-dlf-phase-3-living-room-gurgaon.jpg">
 <link rel="stylesheet" href="/css/style.css?v=20261005">
+<style>
+/* Gallery photos are 4:3 landscape; show them full-frame instead of portrait-cropped */
+.gallery-landscape .portfolio-item { aspect-ratio: 4 / 3; }
+.gallery-landscape .portfolio-item:nth-child(3n+2),
+.gallery-landscape .portfolio-item:nth-child(2) { transform: none; }
+.gallery-landscape .portfolio-grid { row-gap: 26px; }
+</style>
 
 <script type="application/ld+json">
 {
@@ -328,7 +335,7 @@
       </div>
       <p class="desc reveal">Photographs from the completed villa, courtesy of the Nivasa Villas team. More angles, room tours and booking details live on <a href="https://www.nivasavillas.in/" target="_blank" rel="noopener">nivasavillas.in</a>.</p>
     </div>
-    <div class="portfolio-grid">
+    <div class="portfolio-grid gallery-landscape">
       <figure class="portfolio-item reveal">
         <img src="/images/nivasa-villas-gurgaon-exterior.jpg" alt="Exterior of Nivasa Villas, DLF Phase 3, Gurugram, a three-side open triplex villa behind a private gate" width="574" height="717" loading="lazy">
         <figcaption>The villa, Moulsari Avenue</figcaption>
