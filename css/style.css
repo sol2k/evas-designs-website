@@ -2190,3 +2190,7 @@ section { padding: 104px 0; }
   transition: color var(--speed) ease;
 }
 .serve-col a:hover { color: var(--gold-deep); }
+
+/* Linked portfolio items (project case-study cards) */
+.portfolio-item > a { display: block; height: 100%; color: inherit; text-decoration: none; }
+.portfolio-item .card-link { display: inline-block; margin-top: 10px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
