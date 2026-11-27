@@ -42,6 +42,21 @@
 .gallery-landscape .portfolio-item:nth-child(3n+2),
 .gallery-landscape .portfolio-item:nth-child(2) { transform: none; }
 .gallery-landscape .portfolio-grid { row-gap: 26px; }
+/* Feature-split photos: fixed 4:3 framed box, image contained, never stretched */
+.feature-split .img-frame {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  align-self: center;
+  border: 1px solid rgba(176, 141, 87, 0.22);
+  box-shadow: 0 34px 70px rgba(27, 22, 17, 0.14);
+  background: var(--espresso-soft);
+}
+.feature-split .img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 </style>
 
 <script type="application/ld+json">
